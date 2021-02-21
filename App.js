@@ -13,7 +13,7 @@ import Post from './src/components/Post';
 import feed from './assets/data/feed';
 
 import HomeScreen from './src/screens/HomeScreen';
-import SearchResutsScreen from './src/screens/SearchResults';
+import SearchResutsScreen from './src/screens/SearchResultsScreen';
 import LocationScreen from './src/screens/LocationScreen';
 import GuestsScreen from './src/screens/GuestsScreen';
 import Router from './src/navigation/Router';
