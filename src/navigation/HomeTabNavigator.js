@@ -1,16 +1,15 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import ExploreNavigator from './ExploreNavigator';
+import HomeScreen from '../screens/HomeScreen';
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Feather from 'react-native-vector-icons/Feather';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 
-import HomeScreen from '../screens/HomeScreen';
-import ExploreNavigator from './ExploreNavigator';
-
 const Tab = createBottomTabNavigator();
-const HomeTabNavigator = () => {
+const HomeTabNavigator = (props) => {
   return (
     <Tab.Navigator
       tabBarOptions={{
