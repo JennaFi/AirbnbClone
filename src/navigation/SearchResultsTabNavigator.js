@@ -1,7 +1,7 @@
 import React from 'react';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 import SearchResultsScreen from '../screens/SearchResultsScreen';
-
+import SearchResultsMap from '../screens/SearchResultsMap';
 const Tab = createMaterialTopTabNavigator();
 
 const SearchResultsTabNavigator = () => {
@@ -12,7 +12,7 @@ const SearchResultsTabNavigator = () => {
         indicatorStyle: {backgroundColor: '#f15454'},
       }}>
       <Tab.Screen name={'list'} component={SearchResultsScreen} />
-      <Tab.Screen name={'map'} component={SearchResultsScreen} />
+      <Tab.Screen name={'map'} component={SearchResultsMap} />
     </Tab.Navigator>
   );
 };
