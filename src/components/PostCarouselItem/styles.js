@@ -2,8 +2,18 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    height: 120,
+    height: 130,
     padding: 5,
+
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+
+    elevation: 5,
   },
 
   innerContainer: {
@@ -23,11 +33,11 @@ const styles = StyleSheet.create({
     color: '#5b5b5b',
   },
   description: {
-    fontSize: 18,
+    fontSize: 15,
     lineHeight: 26,
   },
   prices: {
-    fontSize: 18,
+    fontSize: 15,
     marginVertical: 10,
   },
   oldPrice: {
