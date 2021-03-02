@@ -18,8 +18,7 @@ import LocationScreen from './src/screens/LocationScreen';
 import GuestsScreen from './src/screens/GuestsScreen';
 import Router from './src/navigation/Router';
 
-// const post1 = feed[0];
-// const post2 = feed[2];
+import {withAuthenticator} from 'aws-amplify-react-native';
 
 const App: () => React$Node = () => {
   return (
@@ -30,4 +29,4 @@ const App: () => React$Node = () => {
   );
 };
 
-export default App;
+export default withAuthenticator(App);
